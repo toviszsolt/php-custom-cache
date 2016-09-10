@@ -19,8 +19,8 @@ $html = Cache::read( 'sample.html', 'html' ); // Read Content from Cache
 /* Object Caching */
 $obj = new StdClass(); // Set Class
 $obj->prop = 1; // Set Property of Class
-Cache::write( serialze($obj), 'sample.obj', 'obj' ); // Write Object to Cache (__sleep)
-$sample_obj = unserialze( Cache::read( 'sample.obj', 'obj' ) ); // Read Object from Cache (__wakeup)
+Cache::write( serialize($obj), 'sample.obj', 'obj' ); // Write Object to Cache (__sleep)
+$sample_obj = unserialize( Cache::read( 'sample.obj', 'obj' ) ); // Read Object from Cache (__wakeup)
 
 /* Array Caching */
 $array = [0,1,2,3,4,5]; // Set Array

@@ -15,8 +15,8 @@
  * </pre>
  * <pre>
  * // /.cache/obj/object_m01.obj
- * Cache::write( serialze($object), 'object_m01.obj', 'obj' );
- * $object = unserialze( Cache::read( 'object_m01.obj', 'obj' ) );
+ * Cache::write( serialize($object), 'object_m01.obj', 'obj' );
+ * $object = unserialize( Cache::read( 'object_m01.obj', 'obj' ) );
  * </pre>
  * <pre>
  * // /.cache/json/cache-file-name.json

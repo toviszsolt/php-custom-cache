@@ -26,6 +26,11 @@ $sample_obj = unserialize( Cache::read( 'sample.obj', 'obj' ) ); // Read Object 
 $array = [0,1,2,3,4,5]; // Set Array
 Cache::write( json_encode($array), 'sample.json', 'json' ); // Write Array to Cache
 $sample_arr = json_decode( Cache::read( 'sample.json', 'json' ), true ); // Read Array from Cache
+
+/* Remove Cache */
+Cache::remove( 'sample.html', 'html' );
+Cache::remove( 'sample.obj', 'obj' );
+Cache::remove( 'sample.json', 'json' );
 ```
 
 # Documentation
